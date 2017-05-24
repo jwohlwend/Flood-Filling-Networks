@@ -3,12 +3,6 @@ model.py
 """
 
 import tensorflow as tf
-from layers import conv_module
-import tensorflow as tf
-
-#####################################################################
-##########################     MODEL     ############################
-#####################################################################
 
 def flood_filling_network(inp, num_modules):
     """Flood filling network model.
@@ -29,10 +23,6 @@ def flood_filling_network(inp, num_modules):
         inp = conv_module(inp, 32, 32)
     out = conv_module(inp, 32, 1)
     return out
-
-#####################################################################
-#########################     HELPERS     ###########################
-#####################################################################
 
 def conv_module(inp, channel_in, channel_out):
     """Implements a convolutional module as outlined in the paper.
