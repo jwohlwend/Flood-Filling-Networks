@@ -1,0 +1,13 @@
+DATA: "/home/jeremy/Documents/Lab/simulations/simple/simulation/channels_012.tiff"
+LABELS: "/home/jeremy/Documents/Lab/simulations/simple/groundtruth/ATTO488/all_cells.tiff"
+TRAINING: 0.75
+NUM_EXAMPLES: 1e5
+
+FOV_SHAPE: [33, 33, 17]
+NUM_CONV_MODULES: 17
+LEARNING_RATE: 1e-3
+BATCH_SIZE: 4
+CLASSES: [0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.075, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+PATCH_SHAPE:  [49, 49, 25]
+DELTA: (8, 8, 4)
+TMOVE: 0.9
